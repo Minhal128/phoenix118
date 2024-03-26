@@ -116,35 +116,35 @@ void displayHoroscope(ZodiacSign sign)
         break;
     case LEO:
         printf("Leo:\n");
-         system("espeak \"Leo\"");
+        system("espeak \"Leo\"");
         break;
     case VIRGO:
         printf("Virgo:\n");
-         system("espeak \"Virgo\"");
+        system("espeak \"Virgo\"");
         break;
     case LIBRA:
         printf("Libra:\n");
-         system("espeak \"Libra\"");
+        system("espeak \"Libra\"");
         break;
     case SCORPIO:
         printf("Scorpio:\n");
-         system("espeak \"Scorpio\"");
+        system("espeak \"Scorpio\"");
         break;
     case SAGITTARIUS:
         printf("Sagittarius:\n");
-         system("espeak \"Sagittarius\"");
+        system("espeak \"Sagittarius\"");
         break;
     case CAPRICORN:
         printf("Capricorn:\n");
-         system("espeak \"Capricorn\"");
+        system("espeak \"Capricorn\"");
         break;
     case AQUARIUS:
         printf("Aquarius:\n");
-         system("espeak \"Aquarius\"");
+        system("espeak \"Aquarius\"");
         break;
     case PISCES:
         printf("Pisces:\n");
-         system("espeak \"Pisces\"");
+        system("espeak \"Pisces\"");
         break;
     }
 
@@ -152,12 +152,10 @@ void displayHoroscope(ZodiacSign sign)
     char command[1000];
     sprintf(command, "espeak \"%s\"", horoscopes[sign]);
     system(command);
-    
 
     printf("\n\n");
     // Print the random joke
     // printf("Random Joke:\n%s\n", jokes[randomIndex]);
-    
 }
 
 // Function to get the daily horoscope based on user's birth month and day
@@ -231,7 +229,7 @@ void addEvent(Event events[], int *eventCount)
 
     printf("Enter event description: ");
     system("espeak \"Enter event description\"");
-    
+
     scanf(" %[^\n]", events[*eventCount].description);
 
     // Set event time (for simplicity, let's say events are today)
@@ -340,9 +338,9 @@ void getRandomFactOrQuote()
     // Array of facts or quotes
     const char *factsOrQuotes[] = {
         // "The Earth's atmosphere is composed of approximately 78% nitrogen, 21% oxygen, and 1% other gases.",
-        "Failure is simply the opportunity to begin again, this time more intelligently - Henry Ford", 
+        "Failure is simply the opportunity to begin again, this time more intelligently - Henry Ford",
         // "Isaac Newton formulated the laws of motion and universal gravitation.",
-        "Success is stumbling from failure to failure with no loss of enthusiasm - Winston Churchill" ,
+        "Success is stumbling from failure to failure with no loss of enthusiasm - Winston Churchill",
         // "The human brain is the most energy-consuming organ in the body.",
         "Failure is the condiment that gives success its flavor - Truman Capote",
         "“The only way to do great work is to love what you do.” - Steve Jobs",
@@ -350,7 +348,7 @@ void getRandomFactOrQuote()
         "Success is not the absence of failure; it's the persistence through failure.",
         "Failure is a detour, not a dead-end street - Zig Ziglar",
         "Success is not about avoiding failure, but learning from it and moving forward.",
-        "Failure is not falling down but refusing to get up - Chinese Proverb" ,
+        "Failure is not falling down but refusing to get up - Chinese Proverb",
         "Success is walking from failure to failure with no loss of enthusiasm - Winston Churchill",
         "Failure is the path of least persistence; success is the road of endless perseverance.",
         "Success is not measured by how many times you fall, but by how many times you rise after each fall.",
@@ -429,7 +427,7 @@ void task()
 
     printf("Welcome to Todo List\n");
     system("espeak \"Welcome to To do List\"");
-    
+
     while (1)
     {
         printf("\n1. Add Task\n");
@@ -482,7 +480,7 @@ void task()
             break;
         case 3:
             printf("Enter index of task to delete: ");
-             system("espeak \"Enter index of task to delete\"");
+            system("espeak \"Enter index of task to delete\"");
             scanf("%d", &taskIndex);
             if (taskIndex > 0 && taskIndex <= numTasks)
             {
@@ -818,7 +816,7 @@ void nedadmission()
     system("espeak \"opening NED admission\"");
     system("start https://cct.neduet.edu.pk/admission_ms");
 }
-void openBlogonPA() 
+void openBlogonPA()
 {
     printf("Opening Blog on PHOENIX\n");
     system("espeak \"opening blog on phoenix\"");
@@ -839,10 +837,6 @@ void openMyblog()
     system("start https://medium.com/@rizvi4600779/phoenix-bridging-pythons-ease-with-c-s-power-for-high-performance-personal-assistance-87e21919ea75");
 }
 
-// void intro()
-// {
-//     printf
-// }
 void openTextReaderMode()
 {
     printf("Opening Text Reader Mode\n");
@@ -1230,11 +1224,11 @@ int main()
                 {
                     nedadmission();
                 }
-                 else if(strcmp(command, "open my blog on PHOENIX")==0)
-                 {
-                  
+                else if (strcmp(command, "open my blog on PHOENIX") == 0)
+                {
+
                     openMyblog();
-                 }
+                }
                 else if (strcmp(command, "close all") == 0)
                 {
                     printf("Closing all Tabs...\n");
@@ -1296,16 +1290,13 @@ int main()
                 {
                     playPeace1();
                 }
-                
 
-                
                 if (strcmp(command, "bye") == 0 || strcmp(command, "goodbye") == 0)
                 {
                     printf("Nice To meet you...Goodbye\n");
                     system("espeak \"Nice To meet you...Goodbye\"");
                     break;
                 }
-
 
             } while (1);
         }
